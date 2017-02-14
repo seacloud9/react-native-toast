@@ -81,7 +81,6 @@ public class Toast extends ReactContextBaseJavaModule implements LifecycleEventL
                 final int cornerRadius = styling.getInt("cornerRadius");
                 final int horizontalPadding = styling.getInt("horizontalPadding");
                 final int verticalPadding = styling.getInt("verticalPadding");
-                FLog.d("RCTToast 1", "after styling");
                 GradientDrawable shape = new GradientDrawable();
                 shape.setCornerRadius(cornerRadius);
                 shape.setAlpha((int)(opacity * 255)); // 0-255, where 0 is an invisible background
@@ -94,7 +93,6 @@ public class Toast extends ReactContextBaseJavaModule implements LifecycleEventL
                 if (textSize > -1) {
                   toastTextView.setTextSize(textSize.floatValue());
                 }
-                FLog.d("RCTToast 2", "after styling");
                 toast.getView().setPadding(horizontalPadding, verticalPadding, horizontalPadding, verticalPadding);
 
                 // this gives the toast a very subtle shadow on newer devices
