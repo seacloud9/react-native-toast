@@ -1,29 +1,92 @@
 {
+  "_args": [
+    [
+      {
+        "raw": "@remobile/react-native-toast@^1.0.5",
+        "scope": "@remobile",
+        "escapedName": "@remobile%2freact-native-toast",
+        "name": "@remobile/react-native-toast",
+        "rawSpec": "^1.0.5",
+        "spec": ">=1.0.5 <2.0.0",
+        "type": "range"
+      },
+      "/Users/brsmith/Development/study-clinic-control"
+    ]
+  ],
+  "_from": "@remobile/react-native-toast@>=1.0.5 <2.0.0",
+  "_id": "@remobile/react-native-toast@1.0.5",
+  "_inCache": true,
+  "_location": "/@remobile/react-native-toast",
+  "_nodeVersion": "6.5.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/react-native-toast-1.0.5.tgz_1476164632111_0.3830379191786051"
+  },
+  "_npmUser": {
+    "name": "remobile",
+    "email": "42550564@qq.com"
+  },
+  "_npmVersion": "3.10.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@remobile/react-native-toast@^1.0.5",
+    "scope": "@remobile",
+    "escapedName": "@remobile%2freact-native-toast",
     "name": "@remobile/react-native-toast",
-    "version": "1.0.5",
-    "description": "A android like toast for react-native support for ios and android",
-    "main": "index.js",
-    "author": {
-        "name": "YunJiang.Fang",
-        "email": "42550564@qq.com"
-    },
-    "license": "MIT",
-    "keywords": [
-        "react-native",
-        "react-component",
-        "ios",
-        "android",
-        "toast",
-        "position",
-        "remobile",
-        "mobile"
-    ],
-    "homepage": "https://github.com/remobile/react-native-toast",
-    "bugs": {
-        "url": "https://github.com/remobile/react-native-toast/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/remobile/react-native-toast.git"
+    "rawSpec": "^1.0.5",
+    "spec": ">=1.0.5 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://registry.npmjs.org/@remobile/react-native-toast/-/react-native-toast-1.0.5.tgz",
+  "_shasum": "a74b1838a11b1951a354d62332fc21805b72cdca",
+  "_shrinkwrap": null,
+  "_spec": "@remobile/react-native-toast@^1.0.5",
+  "_where": "/Users/brsmith/Development/study-clinic-control",
+  "author": {
+    "name": "YunJiang.Fang",
+    "email": "42550564@qq.com"
+  },
+  "bugs": {
+    "url": "https://github.com/remobile/react-native-toast/issues"
+  },
+  "dependencies": {},
+  "description": "A android like toast for react-native support for ios and android",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "a74b1838a11b1951a354d62332fc21805b72cdca",
+    "tarball": "https://registry.npmjs.org/@remobile/react-native-toast/-/react-native-toast-1.0.5.tgz"
+  },
+  "gitHead": "96a99005576d12f9a5e700ace492569ce61e27a9",
+  "homepage": "https://github.com/remobile/react-native-toast",
+  "keywords": [
+    "react-native",
+    "react-component",
+    "ios",
+    "android",
+    "toast",
+    "position",
+    "remobile",
+    "mobile"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "remobile",
+      "email": "42550564@qq.com"
     }
+  ],
+  "name": "@remobile/react-native-toast",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/remobile/react-native-toast.git"
+  },
+  "scripts": {},
+  "version": "1.0.5"
 }

@@ -12,6 +12,15 @@ var Toast = {};
 var optionsBuilder = function () {
 
   // defaults
+  var styling = {
+    backgroundColor:'#ff1744',
+    textColor:'#ffffff',
+    textSize: -1,
+    opacity:0.8,
+    cornerRadius: 100,
+    horizontalPadding: 50,
+    verticalPadding: 30
+  };
   var message = null;
   var duration = "short";
   var position = "center";
@@ -38,8 +47,14 @@ var optionsBuilder = function () {
       return this;
     },
 
+    withStyling: function(_styling){
+      styling = _styling
+      return this;
+    },
+
     build: function() {
       return {
+        styling: styling,
         message: message,
         duration: duration,
         position: position,
@@ -54,42 +69,43 @@ var showWithOptions = function (options) {
     RCTToast.show(options);
 };
 
-var showToast = function (message, duration, position) {
+var showToast = function (message, duration, position, styling) {
   showWithOptions(
       optionsBuilder()
           .withMessage(message||'未知数据')
           .withDuration(duration)
           .withPosition(position)
+          .withStyling(styling)
           .build()
       );
 };
 
-Toast.showShortTop = function (message) {
-  showToast(message, "short", "top");
+Toast.showShortTop = function (message, styling) {
+  showToast(message, "short", "top", styling);
 };
 
-Toast.showShortCenter = function (message) {
-  showToast(message, "short", "center");
+Toast.showShortCenter = function (message, styling) {
+  showToast(message, "short", "center", styling);
 };
 
-Toast.showShortBottom = function (message) {
-  showToast(message, "short", "bottom");
+Toast.showShortBottom = function (message, styling) {
+  showToast(message, "short", "bottom", styling);
 };
 
-Toast.showLongTop = function (message) {
-  showToast(message, "long", "top");
+Toast.showLongTop = function (message, styling) {
+  showToast(message, "long", "top", styling);
 };
 
-Toast.showLongCenter = function (message) {
-  showToast(message, "long", "center");
+Toast.showLongCenter = function (message, styling) {
+  showToast(message, "long", "center", styling);
 };
 
-Toast.showLongBottom = function (message) {
-  showToast(message, "long", "bottom");
+Toast.showLongBottom = function (message, styling) {
+  showToast(message, "long", "bottom", styling);
 };
 
-Toast.show = function (message) {
-  showToast(message, "short", "bottom");
+Toast.show = function (message, styling) {
+  showToast(message, "short", "bottom", styling);
 };
 
 Toast.hide = function () {
